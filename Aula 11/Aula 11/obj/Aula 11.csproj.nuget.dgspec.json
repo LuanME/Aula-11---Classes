@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luans\\source\\repos\\Aula 11\\Aula 11\\Aula 11.csproj": {}
+    "C:\\Users\\ingridg\\Documents\\DIGITAL HOUSE\\Visual Studio\\Aula11\\Aula 11\\Aula 11\\Aula 11.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luans\\source\\repos\\Aula 11\\Aula 11\\Aula 11.csproj": {
+    "C:\\Users\\ingridg\\Documents\\DIGITAL HOUSE\\Visual Studio\\Aula11\\Aula 11\\Aula 11\\Aula 11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luans\\source\\repos\\Aula 11\\Aula 11\\Aula 11.csproj",
+        "projectUniqueName": "C:\\Users\\ingridg\\Documents\\DIGITAL HOUSE\\Visual Studio\\Aula11\\Aula 11\\Aula 11\\Aula 11.csproj",
         "projectName": "Aula 11",
-        "projectPath": "C:\\Users\\luans\\source\\repos\\Aula 11\\Aula 11\\Aula 11.csproj",
-        "packagesPath": "C:\\Users\\luans\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luans\\source\\repos\\Aula 11\\Aula 11\\obj\\",
+        "projectPath": "C:\\Users\\ingridg\\Documents\\DIGITAL HOUSE\\Visual Studio\\Aula11\\Aula 11\\Aula 11\\Aula 11.csproj",
+        "packagesPath": "C:\\Users\\ingridg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ingridg\\Documents\\DIGITAL HOUSE\\Visual Studio\\Aula11\\Aula 11\\Aula 11\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\luans\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ingridg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
