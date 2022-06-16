@@ -1,42 +1,45 @@
 ﻿
+using Aula_11.Operacoes;
+
 namespace Aula_11
 {
     public class Calculadora
     {
-        public double Valor { get; private set; }
-        public double Resultado { get; private set; }
+        public Dictionary<string, Operacao> Operacoes { get; private set; }
 
-        public Calculadora(double valor, double resultado)
+        public decimal Visor { get; private set; }
+
+        public Calculadora()
         {
-            this.Valor = valor;
-            this.Resultado = resultado;
+            Operacao soma = new Soma();
+            Operacao subtracao = new Subtracao();
+            Operacao multiplicacao = new Multiplicacao();
+            Operacao divisao = new Divisao();
+
+            this.Operacoes = new Dictionary<string, Operacao>();
+
+            this.Operacoes.Add("1", soma);
+            this.Operacoes.Add("2", subtracao);
+            this.Operacoes.Add("3", multiplicacao);
+            this.Operacoes.Add("4", divisao);
+
+            this.zerar();
         }
 
-
-        public int menu()
+        public void zerar()
         {
-            int op;
-            Console.WriteLine("Menu de opções da calculadora");
-            Console.WriteLine("1 - Somar");
-            Console.WriteLine("2 - Subtrair");
-            Console.WriteLine("3 - Multiplicar");
-            Console.WriteLine("4 - Dividir");
-            Console.WriteLine("5 - Zerar Calculadora");
-            Console.WriteLine("0 - Terminar");
-            Console.WriteLine("Sua opção: ");
-            op = int.Parse(Console.ReadLine());
-
-            return op;
+            this.Visor = 0;
         }
 
-       
-
-        public void zerarResultado()
+        public void calcular(string operacao, decimal valor)
         {
-            this.Resultado = 0;
+            if (!this.Operacoes.ContainsKey(operacao))
+            {
+                throw new Exception("Operacao Nao Encontrada");
+            }
+
+            this.Visor = this.Operacoes[operacao].calcular(this.Visor, valor);
         }
-
-
 
     }
 }
